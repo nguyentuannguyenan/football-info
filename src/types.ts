@@ -14,7 +14,7 @@ export type matchesArea = {
 export type matchesCompetition = {
     id?: number,
     name: string,
-    emblems: string,
+    emblem: string,
 }
 
 export type homeTeam = {
