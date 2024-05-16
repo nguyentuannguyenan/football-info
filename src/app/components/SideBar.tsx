@@ -19,7 +19,7 @@ const SideBar:FC = () => {
         <h1 className='font-bold text-xl mb-4 text-teal-400'>Leagues</h1>
         <ul className='space-y-2'>
           {
-            Leagues?.map((league) => (
+            Leagues.map((league) => (
               <div key={league?.id} className='flex'>
                 <LinkSide href={league.href} name={league?.name} src={league?.emblem} />
               </div>

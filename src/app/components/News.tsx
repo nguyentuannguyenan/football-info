@@ -12,7 +12,7 @@ const News = async () => {
     <div className='w-[350px] bg-[rgb(40,46,58)] rounded-md px-2 md:px-6 py-2'>
       <h1 className='text-xl text-teal-400 font-bold mb-4'>News - Top Headlines</h1>
       <div>
-        {newsData?.map((news) => (
+        {newsData.map((news) => (
           <Link key={`${news.title}`} href={news.url} legacyBehavior>
             <a target="_blank">
               <div className="relative w-full h-[150px] mb-4 group">

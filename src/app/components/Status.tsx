@@ -18,7 +18,7 @@ const [statusMatch, setStatusMatch] = useState("TODAY");
       </div>
       <div className='w-full'>
         {statusMatch === "TODAY" ? (
-          matchesList?.map((data) => (
+          matchesList.map((data) => (
             <div key={data.id}>
               {data?.status === "TIMED" && (
                 <LeagueTable data={data} />
@@ -28,7 +28,7 @@ const [statusMatch, setStatusMatch] = useState("TODAY");
         ) : null}
 
         {statusMatch === "FINISHED" ? (
-          matchesList?.map((data) => (
+          matchesList.map((data) => (
             <div key={data.id}>
               {data?.status === "FINISHED" && (
                 <LeagueTable data={data} />
@@ -37,7 +37,7 @@ const [statusMatch, setStatusMatch] = useState("TODAY");
           ))
         ) : null}
         {statusMatch === "FINISHED" ? (
-          matchesListFinished?.map((data) => (
+          matchesListFinished.map((data) => (
             <div key={data.id}>
               <LeagueTable data={data} />
             </div>
